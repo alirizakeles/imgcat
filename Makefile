@@ -24,7 +24,7 @@ MANDIR = $(PREFIX)/share/man/man1
 include config.mk
 
 # CImg requires pthread, for some reason
-LDLIBS = $(LIBS) -ltermcap -lm -lpthread
+LDLIBS = $(LIBS) -lncurses -lm -lpthread
 
 # Get the source files.
 SOURCES = $(wildcard src/*.c) $(wildcard src/*.cc)
